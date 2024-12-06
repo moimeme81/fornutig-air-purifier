@@ -2,7 +2,9 @@
 
 esphome code and instructions to modify the fornutig ikea air purifier.
 
-card.yaml is code for a card to operate it, not essential but could be usefull. requires card-mod to work but you can easily just remove that part if you want and be done.
+The beauty of this approach is that it's 100% transparant, any cahnge that you make on the device will be reported in home assistant and home assistant is able to override it at any time so if your grandma comes over and just want to turn it on yet hasn't touched a computer in her life, your automations won't break.
+
+card.yaml is code for a card to operate it, not essential but could be usefull. Requires card-mod to work but you can easily just remove that part if you want and be done.
 
 # Step 1
 
