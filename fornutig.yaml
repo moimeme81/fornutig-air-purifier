@@ -4,7 +4,7 @@ esphome:
   board: d1_mini
  
 substitutions:
-  devicename: fornuftig-toilette
+  devicename: NAME YOUR DEVICE HERE
   friendly_name: FORNÜFTIG
  
 wifi:
@@ -12,7 +12,7 @@ wifi:
     password: !secret wifi_password
  
     ap:
-      ssid: "Test Fallback Hotspot"
+      ssid: "fornutig fan fallback"
       password: !secret wifi_password
  
 logger:
