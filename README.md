@@ -2,6 +2,8 @@
 
 esphome code and instructions to modify the fornutig ikea air purifier.
 
+card.yaml is code for a card to operate it, not essential but could be usefull. requires card-mod to work but you can easily just remove that part if you want and be done.
+
 # Step 1
 
 Looking at the board with the text reading right (same for every steps) cut the four bottom pins and bend the remaining part up so that you can solder wires to them as marked in the picture bellow.
