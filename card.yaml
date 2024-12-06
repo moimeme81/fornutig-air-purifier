@@ -1,0 +1,51 @@
+type: horizontal-stack
+cards:
+  - type: button
+    entity: button.fornuftig_fan_off
+    icon: mdi:fan-off
+    show_name: false
+    show_icon: true
+    tap_action:
+      action: toggle
+    card_mod:
+      style: |
+        ha-card {
+          background-color: {{ 'red' if is_state('fan.fornuftig_fan', 'off') else 'black' }};
+        }
+  - type: button
+    entity: button.fornuftig_fan_low
+    icon: mdi:fan-speed-1
+    show_name: false
+    show_icon: true
+    tap_action:
+      action: toggle
+    card_mod:
+      style: |
+        ha-card {
+          background-color: {{ 'blue' if is_state('fan.fornuftig_fan', 'on') and state_attr('fan.fornuftig_fan', 'percentage') == 33 else 'black' }};
+        }
+  - type: button
+    entity: button.fornuftig_fan_medium
+    icon: mdi:fan-speed-2
+    show_name: false
+    show_icon: true
+    tap_action:
+      action: toggle
+    card_mod:
+      style: |
+        ha-card {
+          background-color: {{ 'yellow' if is_state('fan.fornuftig_fan', 'on') and state_attr('fan.fornuftig_fan', 'percentage') == 66 else 'black' }};
+        }
+  - type: button
+    entity: button.fornuftig_fan_high
+    icon: mdi:fan-speed-3
+    show_name: false
+    show_icon: true
+    tap_action:
+      action: toggle
+    card_mod:
+      style: |
+        ha-card {
+          background-color: {{ 'green' if is_state('fan.fornuftig_fan', 'on') and state_attr('fan.fornuftig_fan', 'percentage') == 100 else 'black' }};
+        }
+title: fan salle de bain
